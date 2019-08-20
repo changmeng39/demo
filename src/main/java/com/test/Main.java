@@ -4,10 +4,31 @@ import com.application.MyException;
 import com.entity.Color;
 import com.entity.User;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
+
+        int aa = 5;
+        int bb = 10;
+
+//        aa = aa + bb; // 15
+//        bb = aa - bb; // 5
+//        aa = aa - bb; // 10
+//
+//        System.out.println(aa);
+//
+//        System.out.println(bb);
+
+
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("1", "a");
+
+        System.out.println(map.entrySet());
+
+        System.out.println("abcd".compareTo("abcd"));
 
         int id = 1;
 
