@@ -55,6 +55,25 @@
             <version>1.2.59</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.api-ads/adwords-extension-ratelimiter -->
+        <dependency>
+            <groupId>com.google.api-ads</groupId>
+            <artifactId>adwords-extension-ratelimiter</artifactId>
+            <version>0.1.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.43.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/org.activiti/activiti-spring-boot-starter-basic -->
         <!-- activity工作流 -->
 <!--        <dependency>-->

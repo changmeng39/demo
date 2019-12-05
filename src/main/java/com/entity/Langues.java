@@ -9,7 +9,7 @@ public enum Langues {
     private String value;
     private String name;
 
-    private Langues(String value, String name) {
+    Langues(String value, String name) {
         this.value = value;
         this.name = name;
     }

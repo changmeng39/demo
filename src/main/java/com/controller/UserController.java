@@ -1,6 +1,9 @@
 package com.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.entity.Category;
+import com.entity.Color;
+import com.entity.Langues;
 import com.entity.User;
 import com.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +30,12 @@ public class UserController {
     public int insert(User user){
         user.setName("哎哎哎");
         return userService.insert(user);
+    }
+
+    @RequestMapping("Category")
+    public Category color(Category category){
+        System.out.println(category);
+        return category;
     }
 
     @RequestMapping("getJson")

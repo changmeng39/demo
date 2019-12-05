@@ -8,6 +8,21 @@ public class Jdk8 {
 
     public static void main(String[] args) throws Exception {
 
+        User user1 = new User();
+        Optional.ofNullable(user1).ifPresent(user -> {
+            System.out.println("u为null");
+        });
+
+        boolean present = Optional.ofNullable(user1).isPresent();
+        System.out.println("present is " + present);
+
+        String name1 = Optional.ofNullable(user1).map(u-> u.getName()).get();
+        System.out.println("name " + name1);
+
+        List<String> list = null;
+
+        System.out.println("``````````````````````" + list.isEmpty());
+
         //aaa();
 
         // 创建null对象
@@ -89,24 +104,6 @@ public class Jdk8 {
         return user;
     }
 
-//    public static void aaa(){
-//        Map<String, Object> redis = new HashMap<>();
-//        List<String> task = new ArrayList<String>();
-//        redis.put("vin", task);
-//        //存入开空调
-//        task.add("开空调");
-//        redis.put("vin", task);
-//        //放入闹钟
-//        task = (List<String>) redis.get("vin");
-//        //此时预约任务内只有开空调任务
-//        //加入闹钟任务
-//        task.add("闹钟任务");
-//        redis.put("vin", task);
-//
-//        task = (List<String>) redis.get("vin");
-//
-//        task.forEach(System.err::println);
-//
-//    }
+
 
 }

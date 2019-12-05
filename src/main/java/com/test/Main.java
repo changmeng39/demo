@@ -3,7 +3,6 @@ package com.test;
 import com.application.MyException;
 import com.entity.Color;
 import com.entity.User;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -11,16 +10,25 @@ import java.util.Optional;
 public class Main {
     public static void main(String[] args) {
 
-        int aa = 5;
-        int bb = 10;
+        System.out.println(3*0.1==0.3);
+
+        float a1 = 3.88084E7f * 1000000;
+
+        //float b1 = a1 * 1000000;
+
+        System.out.println(a1);
+        //System.out.println(b1);
+
+        int aa = 26 * 8 - 3 - 1;
+        int bb = 28 * 8 - 4;
 
 //        aa = aa + bb; // 15
 //        bb = aa - bb; // 5
 //        aa = aa - bb; // 10
 //
-//        System.out.println(aa);
+        System.out.println(aa);
 //
-//        System.out.println(bb);
+        System.out.println(bb);
 
 
         Map<String, Object> map = new HashMap<String, Object>();
